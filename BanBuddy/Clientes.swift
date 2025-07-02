@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct Cajero : View
+struct Clientes : View
 {
     var body : some View
     {
@@ -9,7 +9,12 @@ struct Cajero : View
         
             VStack(alignment: .center, spacing: 0)
             {
-                
+                Text("Menú Clientes")
+                    .font(.system(
+                        size: 30,
+                        weight: .bold,
+                        design: .rounded
+                    ))
             }
             .navigationBarBackButtonHidden(true)
             .padding()
@@ -19,5 +24,5 @@ struct Cajero : View
 
 #Preview
 {
-    Cajero()
+    Clientes()
 }

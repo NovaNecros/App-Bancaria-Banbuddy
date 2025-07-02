@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct Cajero : View
+struct Cuentas : View
 {
     var body : some View
     {
@@ -19,5 +19,5 @@ struct Cajero : View
 
 #Preview
 {
-    Cajero()
+    Cuentas()
 }

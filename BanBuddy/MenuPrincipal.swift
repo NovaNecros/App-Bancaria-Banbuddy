@@ -14,7 +14,7 @@ struct MenuPrincipal : View
                         .foregroundStyle(Color.red)
                         .font(.system(size: 50))
                     
-                    Text("Banco \nBanBuddy")
+                    Text("Banco BanBuddy")
                         .multilineTextAlignment(.center)
                         .font(.system(
                             size: 32,
@@ -40,7 +40,6 @@ struct MenuPrincipal : View
                 
                 NavigationLink(destination: Gestion())
                 {
-
                     Text("Gestión")
                         .font(.system(size:30))
                         .foregroundColor(.white)
@@ -73,6 +72,7 @@ struct MenuPrincipal : View
                 }
                 .padding(.vertical)
             }
+            .navigationBarBackButtonHidden(true)
             .padding()
         }
     }

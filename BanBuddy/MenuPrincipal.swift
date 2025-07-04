@@ -18,7 +18,7 @@ struct MenuPrincipal : View
                         .multilineTextAlignment(.center)
                         .font(.system(
                             size: 32,
-                            weight: .bold,
+                            weight: .heavy,
                             design: .rounded))
                         .kerning(1)
                         .foregroundStyle(Color.primary)
@@ -40,17 +40,7 @@ struct MenuPrincipal : View
                 
                 NavigationLink(destination: Gestion())
                 {
-                    Text("Gestión")
-                        .font(.system(size:30))
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 260, height: 50)
-                        .padding(.vertical, 12)
-                        .padding(.horizontal, 24)
-                        .background(
-                            RoundedRectangle(cornerRadius: 32)
-                                .fill(Color.red.opacity(1)))
-                        .shadow(color: Color.red.opacity(0.4), radius: 8, x: 8, y: 4)
+                    Botones("Gestión")
                 }
                 .padding(.vertical)
                 
@@ -58,17 +48,7 @@ struct MenuPrincipal : View
                 NavigationLink(destination: Cajero())
                 {
 
-                    Text("Cajero")
-                        .font(.system(size:30))
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 260, height: 50)
-                        .padding(.vertical, 12)
-                        .padding(.horizontal, 24)
-                        .background(
-                            RoundedRectangle(cornerRadius: 32)
-                                .fill(Color.red.opacity(1)))
-                        .shadow(color: Color.red.opacity(0.4), radius: 8, x: 8, y: 4)
+                    Botones("Cajero")
                 }
                 .padding(.vertical)
             }

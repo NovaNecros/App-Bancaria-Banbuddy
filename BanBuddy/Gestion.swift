@@ -11,7 +11,7 @@ struct Gestion : View
                 Text("Gestión BBB")
                     .font(.system(
                         size: 30,
-                        weight: .bold,
+                        weight: .heavy,
                         design: .rounded))
                 
                 Spacer()
@@ -26,49 +26,19 @@ struct Gestion : View
                 
                 NavigationLink(destination: Clientes())
                 {
-                    Text("Clientes")
-                        .font(.system(size:30))
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 260, height: 50)
-                        .padding(.vertical, 12)
-                        .padding(.horizontal, 24)
-                        .background(
-                            RoundedRectangle(cornerRadius: 32)
-                                .fill(Color.red.opacity(1)))
-                        .shadow(color: Color.red.opacity(0.4), radius: 8, x: 8, y: 4)
+                    Botones("Clientes")
                 }
                 .padding(.vertical)
                 
                 NavigationLink(destination: Cuentas())
                 {
-                    Text("Cuentas")
-                        .font(.system(size:30))
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 260, height: 50)
-                        .padding(.vertical, 12)
-                        .padding(.horizontal, 24)
-                        .background(
-                            RoundedRectangle(cornerRadius: 32)
-                                .fill(Color.red.opacity(1)))
-                        .shadow(color: Color.red.opacity(0.4), radius: 8, x: 8, y: 4)
+                    Botones("Cuentas")
                 }
                 .padding(.vertical)
                 
                 NavigationLink(destination: Tarjetas())
                 {
-                    Text("Tarjetas")
-                        .font(.system(size:30))
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 260, height: 50)
-                        .padding(.vertical, 12)
-                        .padding(.horizontal, 24)
-                        .background(
-                            RoundedRectangle(cornerRadius: 32)
-                                .fill(Color.red.opacity(1)))
-                        .shadow(color: Color.red.opacity(0.4), radius: 8, x: 8, y: 4)
+                    Botones("Tarjetas")
                 }
                 .padding(.vertical)
             }

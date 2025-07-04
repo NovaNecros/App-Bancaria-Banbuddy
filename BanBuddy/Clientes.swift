@@ -55,10 +55,7 @@ struct Clientes : View
                 
                 Spacer()
                 
-                Button(action:
-                {
-                    
-                })
+                NavigationLink(destination: NuevoCliente())
                 {
                     Botones("Nuevo")
                 }

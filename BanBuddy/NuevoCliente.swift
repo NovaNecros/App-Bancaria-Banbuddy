@@ -1,8 +1,9 @@
 import SwiftUI
 
-struct ConsultarCliente : View
+struct NuevoCliente : View
 {
     @State private var displayMode : String = "Dark"
+    @State private var tipoCliente : String = "Dark"
     
     let tiposDisplay : [String] = ["Dark", "Light", "Auto"]
     
@@ -12,25 +13,43 @@ struct ConsultarCliente : View
         {
             VStack(alignment: .center, spacing: 0)
             {
-                Text("Consultar cliente")
+                Text("Nueva Cuenta")
                     .font(.system(
                         size: 30,
                         weight: .heavy,
                         design: .rounded
                     ))
                 
-                Image("search")
+                Image("add-user")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 180)
+                    .frame(width: 300)
                     .padding(.top, 60)
                 
                 Spacer()
                 
-                VStack(alignment: .leading, spacing: 20)
+                VStack(alignment: .leading, spacing: 0)
                 {
                     Form()
                     {
+                        Section()
+                        {
+                            Picker(
+                                "Display",
+                                selection: $tipoCliente)
+                            {
+                                ForEach(tiposDisplay, id: \.self)
+                                {
+                                    Text($0)
+                                        .font(.system(size: 22))
+                                }
+                            }
+                            .font(.system(
+                                size: 22,
+                                design: .rounded
+                            ))
+                        }
+                        
                         Section()
                         {
                             Picker(
@@ -49,37 +68,9 @@ struct ConsultarCliente : View
                             ))
                         }
                     }
-                    .padding(.bottom, 10)
+                    .padding(.bottom, 25)
                     
                     Spacer()
-
-                    
-                    List()
-                    {
-                        HStack(alignment: .center, spacing: 0)
-                        {
-                            Text("Nombre")
-                                .font(.system(size: 20))
-                        }
-                        
-                        HStack(alignment: .center, spacing: 0)
-                        {
-                            Text("Apellidos")
-                                .font(.system(size: 20))
-                        }
-                        
-                        HStack(alignment: .center, spacing: 0)
-                        {
-                            Text("Tarjetas")
-                                .font(.system(size: 20))
-                        }
-                        
-                        HStack(alignment: .center, spacing: 0)
-                        {
-                            Text("Movimientos")
-                                .font(.system(size: 20))
-                        }
-                    }
                 }
                 .padding(40)
                 
@@ -87,7 +78,7 @@ struct ConsultarCliente : View
                 
                 NavigationLink(destination: Clientes())
                 {
-                    Botones("Regresar")
+                    Botones("Generar")
                 }
             }
             .navigationBarBackButtonHidden(true)
@@ -98,5 +89,5 @@ struct ConsultarCliente : View
 
 #Preview
 {
-    ConsultarCliente()
+    NuevoCliente()
 }

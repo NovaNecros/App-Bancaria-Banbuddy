@@ -2,6 +2,8 @@ import SwiftUI
 
 struct NuevoCliente : View
 {
+    @Environment(\.dismiss) private var dismiss
+    
     @State private var displayMode : String = "Dark"
     @State private var tipoCliente : String = "Dark"
     
@@ -35,7 +37,7 @@ struct NuevoCliente : View
                         Section()
                         {
                             Picker(
-                                "Display",
+                                "Cliente",
                                 selection: $tipoCliente)
                             {
                                 ForEach(tiposDisplay, id: \.self)
@@ -72,7 +74,7 @@ struct NuevoCliente : View
                     
                     Spacer()
                 }
-                .padding(40)
+                .padding(.bottom, 12)
                 
                 Spacer()
                 
@@ -80,6 +82,19 @@ struct NuevoCliente : View
                 {
                     Botones("Generar")
                 }
+                .padding(.vertical)
+                
+                Button(action:
+                {
+                    withAnimation(.spring())
+                    {
+                        dismiss()
+                    }
+                })
+                {
+                    Botones("Regresar")
+                }
+                .padding(.vertical)
             }
             .navigationBarBackButtonHidden(true)
             .padding()

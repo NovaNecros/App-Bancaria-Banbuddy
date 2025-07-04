@@ -9,7 +9,6 @@ struct Clientes : View
     {
         NavigationStack()
         {
-        
             VStack(alignment: .center, spacing: 0)
             {
                 Text("Menú Clientes")

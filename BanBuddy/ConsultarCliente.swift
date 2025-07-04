@@ -2,6 +2,8 @@ import SwiftUI
 
 struct ConsultarCliente : View
 {
+    @Environment(\.dismiss) private var dismiss
+    
     @State private var displayMode : String = "Dark"
     
     let tiposDisplay : [String] = ["Dark", "Light", "Auto"]
@@ -85,7 +87,13 @@ struct ConsultarCliente : View
                 
                 Spacer()
                 
-                NavigationLink(destination: Clientes())
+                Button(action:
+                {
+                    withAnimation(.spring())
+                    {
+                        dismiss()
+                    }
+                })
                 {
                     Botones("Regresar")
                 }

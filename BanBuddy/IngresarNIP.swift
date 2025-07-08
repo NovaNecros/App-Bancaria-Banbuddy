@@ -27,7 +27,7 @@ struct IngresarNIP : View
                 
                 Spacer()
                 
-                SecureField("••••", text: $nip)
+                SecureField(LocalizedStringKey("censored_4"), text: $nip)
                     .font(.system(size: 60))
                     .autocorrectionDisabled(true)
                     .multilineTextAlignment(.center)

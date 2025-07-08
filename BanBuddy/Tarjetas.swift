@@ -35,7 +35,7 @@ struct Tarjetas : View
                         Text("No. Tarjeta:")
                             .font(.system(size: 24))
                         
-                        TextField("0000-0000-0000", text: $numTarjeta)
+                        TextField(LocalizedStringKey("default_card_number"), text: $numTarjeta)
                             .autocorrectionDisabled()
                             .multilineTextAlignment(.trailing)
                     }
@@ -46,7 +46,7 @@ struct Tarjetas : View
                 
                 NavigationLink(destination: NuevaTarjeta())
                 {
-                    Botones("Nuevo")
+                    Botones("Nueva")
                 }
                 .padding(.vertical)
                 

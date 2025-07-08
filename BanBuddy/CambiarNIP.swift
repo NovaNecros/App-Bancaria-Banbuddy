@@ -43,7 +43,7 @@ struct CambiarNIP : View
                             .font(.system(size: 20))
                             .multilineTextAlignment(.center)
                         
-                        SecureField("Actual", text: $actual)
+                        SecureField(LocalizedStringKey("actual"), text: $actual)
                             .font(.system(size: 24))
                             .autocorrectionDisabled(true)
                             .multilineTextAlignment(.center)

@@ -15,7 +15,7 @@ struct ActualizarCliente : View
         
             VStack(alignment: .center, spacing: 0)
             {
-                Text("Actualizar cliente")
+                Text(LocalizedStringKey("update_client"))
                     .font(.system(
                         size: 30,
                         weight: .heavy,
@@ -69,7 +69,7 @@ struct ActualizarCliente : View
                     
                     HStack(alignment: .center, spacing: 0)
                     {
-                        Text("Apellido:")
+                        Text("\(String(localized: "last_name").capitalized)s:")
                             .font(.system(size: 24))
                         
                         TextField("apellidos", text: $apellido)

@@ -1,0 +1,322 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "actual" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "actual"
+          }
+        }
+      }
+    },
+    "Actual" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actual"
+          }
+        }
+      }
+    },
+    "Actualizar cliente" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actualizar cliente"
+          }
+        }
+      }
+    },
+    "Apellido:" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apellido:"
+          }
+        }
+      }
+    },
+    "apellidos" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "apellidos"
+          }
+        }
+      }
+    },
+    "Apellidos" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apellidos"
+          }
+        }
+      }
+    },
+    "Apellidos:" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apellidos:"
+          }
+        }
+      }
+    },
+    "Cambiar NIP" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Cambiar NIP"
+          }
+        }
+      }
+    },
+    "censored_4" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "****"
+          }
+        }
+      }
+    },
+    "Cliente" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Cliente"
+          }
+        }
+      }
+    },
+    "Confirmar NIP Nuevo:" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Confirmar NIP Nuevo:"
+          }
+        }
+      }
+    },
+    "Consultar cliente" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Consultar cliente"
+          }
+        }
+      }
+    },
+    "default_card_number" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "0000-0000-0000"
+          }
+        }
+      }
+    },
+    "Display" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Display"
+          }
+        }
+      }
+    },
+    "Gestión BBB" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Gestión BBB"
+          }
+        }
+      }
+    },
+    "Ingresa NIP" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Ingresa NIP"
+          }
+        }
+      }
+    },
+    "last_name" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "apellido"
+          }
+        }
+      }
+    },
+    "Menú Clientes" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Menú Clientes"
+          }
+        }
+      }
+    },
+    "Menú Tarjetas" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Menú Tarjetas"
+          }
+        }
+      }
+    },
+    "Movimientos" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Movimientos"
+          }
+        }
+      }
+    },
+    "NIP Actual:" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "NIP Actual:"
+          }
+        }
+      }
+    },
+    "NIP Nuevo:" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "NIP Nuevo:"
+          }
+        }
+      }
+    },
+    "No. Tarjeta:" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "No. Tarjeta:"
+          }
+        }
+      }
+    },
+    "nombre" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "nombre"
+          }
+        }
+      }
+    },
+    "Nombre" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Nombre"
+          }
+        }
+      }
+    },
+    "Nombre:" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Nombre:"
+          }
+        }
+      }
+    },
+    "Nueva Cuenta" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Nueva Cuenta"
+          }
+        }
+      }
+    },
+    "Nuevo" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Nuevo"
+          }
+        }
+      }
+    },
+    "Tarjetas" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Tarjetas"
+          }
+        }
+      }
+    },
+    "titulo_app" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Banco BanBuddy"
+          }
+        }
+      }
+    },
+    "update_client" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actualizar Cliente"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

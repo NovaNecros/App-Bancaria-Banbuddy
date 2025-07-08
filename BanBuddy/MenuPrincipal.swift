@@ -14,7 +14,7 @@ struct MenuPrincipal : View
                         .foregroundStyle(Color.red)
                         .font(.system(size: 50))
                     
-                    Text("Banco BanBuddy")
+                    Text(LocalizedStringKey("titulo_app"))
                         .multilineTextAlignment(.center)
                         .font(.system(
                             size: 32,

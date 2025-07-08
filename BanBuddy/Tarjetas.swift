@@ -10,10 +10,9 @@ struct Tarjetas : View
     {
         NavigationStack()
         {
-        
             VStack(alignment: .center, spacing: 0)
             {
-                Text("\(String(localized: "menu").capitalized) \(String(localized: "tarjetas").capitalized)")
+                Text("\(String(localized: "menu").capitalized) \(String(localized: "card").capitalized)s")
                     .font(.system(
                         size: 30,
                         weight: .heavy,

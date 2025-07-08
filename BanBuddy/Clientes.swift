@@ -11,7 +11,7 @@ struct Clientes : View
         {
             VStack(alignment: .center, spacing: 0)
             {
-                Text("\(String(localized: "menu").capitalized) \(String(localized: "clientes").capitalized)")
+                Text("\(String(localized: "menu").capitalized) \(String(localized: "client").capitalized)s")
                     .font(.system(
                         size: 30,
                         weight: .heavy,
@@ -30,10 +30,10 @@ struct Clientes : View
                 {
                     HStack(alignment: .center, spacing: 10)
                     {
-                        Text("\(String(localized: "nombre").capitalized):")
+                        Text("\(String(localized: "name").capitalized):")
                             .font(.system(size: 24))
                         
-                        TextField("\(String(localized: "nombre"))", text: $nombre)
+                        TextField("\(String(localized: "name"))", text: $nombre)
                             .font(.system(size: 24))
                             .autocorrectionDisabled(true)
                             .multilineTextAlignment(.trailing)

@@ -1,6 +1,58 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%@" : {
+
+    },
+    "%@ %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$@"
+          }
+        }
+      }
+    },
+    "%@ %@ %@:" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$@ %3$@:"
+          }
+        }
+      }
+    },
+    "%@ %@:" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$@:"
+          }
+        }
+      }
+    },
+    "%@ %@s" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$@s"
+          }
+        }
+      }
+    },
+    "%@:" : {
+
+    },
+    "%@s" : {
+
+    },
+    "%@s:" : {
+
+    },
     "account" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -8,66 +60,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "cuenta"
-          }
-        }
-      }
-    },
-    "Actual" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Actual"
-          }
-        }
-      }
-    },
-    "Actualizar cliente" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "actualizar cliente"
-          }
-        }
-      }
-    },
-    "Apellido:" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Apellido:"
-          }
-        }
-      }
-    },
-    "apellidos" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "apellidos"
-          }
-        }
-      }
-    },
-    "Apellidos" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Apellidos"
-          }
-        }
-      }
-    },
-    "Apellidos:" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Apellidos:"
           }
         }
       }
@@ -83,8 +75,16 @@
         }
       }
     },
-    "Cambiar NIP" : {
-
+    "balance" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "saldo"
+          }
+        }
+      }
     },
     "cancel" : {
       "extractionState" : "manual",
@@ -152,9 +152,6 @@
         }
       }
     },
-    "Cliente" : {
-
-    },
     "confirm" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -166,16 +163,6 @@
         }
       }
     },
-    "Confirmar NIP Nuevo:" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Confirmar NIP Nuevo:"
-          }
-        }
-      }
-    },
     "consult" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -183,16 +170,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Consultar"
-          }
-        }
-      }
-    },
-    "Consultar cliente" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Consultar cliente"
           }
         }
       }
@@ -219,6 +196,17 @@
         }
       }
     },
+    "default_money" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "0.00"
+          }
+        }
+      }
+    },
     "display" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -230,16 +218,6 @@
         }
       }
     },
-    "Display" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Display"
-          }
-        }
-      }
-    },
     "generate" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -247,26 +225,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "generar"
-          }
-        }
-      }
-    },
-    "Gestión BBB" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gestión BBB"
-          }
-        }
-      }
-    },
-    "Ingresa NIP" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ingresa NIP"
           }
         }
       }
@@ -315,36 +273,6 @@
         }
       }
     },
-    "Menú Clientes" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Menú Clientes"
-          }
-        }
-      }
-    },
-    "Menú Tarjetas" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Menú Tarjetas"
-          }
-        }
-      }
-    },
-    "Movimientos" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Movimientos"
-          }
-        }
-      }
-    },
     "name" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -389,86 +317,6 @@
         }
       }
     },
-    "NIP Actual:" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "NIP Actual:"
-          }
-        }
-      }
-    },
-    "NIP Nuevo:" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "NIP Nuevo:"
-          }
-        }
-      }
-    },
-    "No. Tarjeta:" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "No. Tarjeta:"
-          }
-        }
-      }
-    },
-    "nombre" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "nombre"
-          }
-        }
-      }
-    },
-    "Nombre" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nombre"
-          }
-        }
-      }
-    },
-    "Nombre:" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nombre:"
-          }
-        }
-      }
-    },
-    "Nueva Cuenta" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nueva Cuenta"
-          }
-        }
-      }
-    },
-    "Nuevo" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nuevo"
-          }
-        }
-      }
-    },
     "number_abrev" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -498,16 +346,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "BBB"
-          }
-        }
-      }
-    },
-    "Tarjetas" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tarjetas"
           }
         }
       }

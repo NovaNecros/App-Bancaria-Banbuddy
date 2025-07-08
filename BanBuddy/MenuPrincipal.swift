@@ -40,7 +40,7 @@ struct MenuPrincipal : View
                 
                 NavigationLink(destination: Gestion())
                 {
-                    Botones("Gestión")
+                    Botones("\(String(localized: "management").capitalized)")
                 }
                 .padding(.vertical)
                 
@@ -48,7 +48,7 @@ struct MenuPrincipal : View
                 NavigationLink(destination: Cajero())
                 {
 
-                    Botones("Cajero")
+                    Botones("\(String(localized: "atm").capitalized)")
                 }
                 .padding(.vertical)
             }

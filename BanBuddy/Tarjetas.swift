@@ -13,7 +13,7 @@ struct Tarjetas : View
         
             VStack(alignment: .center, spacing: 0)
             {
-                Text("Menú Tarjetas")
+                Text("\(String(localized: "menu").capitalized) \(String(localized: "tarjetas").capitalized)")
                     .font(.system(
                         size: 30,
                         weight: .heavy,
@@ -32,10 +32,10 @@ struct Tarjetas : View
                 {
                     HStack(alignment: .center, spacing: 10)
                     {
-                        Text("No. Tarjeta:")
+                        Text("\(String(localized: "number_abrev")) \(String(localized: "card").capitalized):")
                             .font(.system(size: 24))
                         
-                        TextField(LocalizedStringKey("default_card_number"), text: $numTarjeta)
+                        TextField("\(String(localized: "default_card_number"))", text: $numTarjeta)
                             .autocorrectionDisabled()
                             .multilineTextAlignment(.trailing)
                     }
@@ -46,7 +46,7 @@ struct Tarjetas : View
                 
                 NavigationLink(destination: NuevaTarjeta())
                 {
-                    Botones("Nueva")
+                    Botones("\(String(localized: "new_fem").capitalized)")
                 }
                 .padding(.vertical)
                 
@@ -55,7 +55,7 @@ struct Tarjetas : View
                     numTarjeta = ""
                 })
                 {
-                    Botones("Limpiar")
+                    Botones("\(String(localized: "clear").capitalized)")
                 }
                 .padding(.vertical)
                 
@@ -64,7 +64,7 @@ struct Tarjetas : View
                     dismiss()
                 })
                 {
-                    Botones("Regresar")
+                    Botones("\(String(localized: "return").capitalized)")
                 }
                 .padding(.vertical)
                 

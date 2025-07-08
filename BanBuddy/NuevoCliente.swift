@@ -15,7 +15,7 @@ struct NuevoCliente : View
         {
             VStack(alignment: .center, spacing: 0)
             {
-                Text("Nueva Cuenta")
+                Text("\(String(localized: "new_fem").capitalized) \(String(localized: "account").capitalized)")
                     .font(.system(
                         size: 30,
                         weight: .heavy,
@@ -37,7 +37,7 @@ struct NuevoCliente : View
                         Section()
                         {
                             Picker(
-                                "Cliente",
+                                "\(String(localized: "client").capitalized)",
                                 selection: $tipoCliente)
                             {
                                 ForEach(tiposDisplay, id: \.self)
@@ -55,7 +55,7 @@ struct NuevoCliente : View
                         Section()
                         {
                             Picker(
-                                "Display",
+                                "\(String(localized: "display").capitalized)",
                                 selection: $displayMode)
                             {
                                 ForEach(tiposDisplay, id: \.self)
@@ -80,7 +80,7 @@ struct NuevoCliente : View
                 
                 NavigationLink(destination: Clientes())
                 {
-                    Botones("Generar")
+                    Botones("\(String(localized: "generate").capitalized)")
                 }
                 .padding(.vertical)
                 
@@ -92,7 +92,7 @@ struct NuevoCliente : View
                     }
                 })
                 {
-                    Botones("Regresar")
+                    Botones("\(String(localized: "return").capitalized)")
                 }
                 .padding(.vertical)
             }

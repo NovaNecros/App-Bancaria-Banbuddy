@@ -20,7 +20,7 @@ struct CambiarNIP : View
         {
             VStack(alignment: .center, spacing: 0)
             {
-                Text("Cambiar NIP")
+                Text("\(String(localized: "change").capitalized) \(String(localized: "nip"))")
                     .font(.system(
                         size: 30,
                         weight: .heavy,
@@ -39,12 +39,12 @@ struct CambiarNIP : View
                 {
                     HStack(alignment: .center, spacing: 30)
                     {
-                        Text("NIP Actual:")
+                        Text("\(String(localized: "nip")) \(String(localized: "current").capitalized):")
                             .font(.system(size: 20))
                             .multilineTextAlignment(.center)
                         
-                        SecureField(LocalizedStringKey("actual"), text: $actual)
-                            .font(.system(size: 24))
+                        SecureField("\(String(localized: "current"))", text: $actual)
+                            .font(.system(size: 20))
                             .autocorrectionDisabled(true)
                             .multilineTextAlignment(.center)
                             .keyboardType(.numberPad)
@@ -57,12 +57,12 @@ struct CambiarNIP : View
                     
                     HStack(alignment: .center, spacing: 30)
                     {
-                        Text("NIP Nuevo:")
+                        Text("\(String(localized: "nip")) \(String(localized: "new").capitalized):")
                             .font(.system(size: 20))
                             .multilineTextAlignment(.center)
                         
-                        SecureField("Nuevo", text: $nuevo)
-                            .font(.system(size: 24))
+                        SecureField("\(String(localized: "new"))", text: $nuevo)
+                            .font(.system(size: 20))
                             .autocorrectionDisabled(true)
                             .multilineTextAlignment(.center)
                             .keyboardType(.numberPad)
@@ -75,12 +75,12 @@ struct CambiarNIP : View
                     
                     HStack(alignment: .center, spacing: 30)
                     {
-                        Text("Confirmar NIP Nuevo:")
+                        Text("\(String(localized: "confirm").capitalized) \(String(localized: "nip")) \(String(localized: "new").capitalized):")
                             .font(.system(size: 20))
                             .multilineTextAlignment(.center)
                         
-                        SecureField("Nuevo", text: $nuevo2)
-                            .font(.system(size: 24))
+                        SecureField("\(String(localized: "new"))", text: $nuevo2)
+                            .font(.system(size: 20))
                             .autocorrectionDisabled(true)
                             .multilineTextAlignment(.center)
                             .keyboardType(.numberPad)
@@ -97,7 +97,7 @@ struct CambiarNIP : View
                 
                 NavigationLink(destination: MenuPrincipal())
                 {
-                    Botones("Confirmar")
+                    Botones("\(String(localized: "confirm").capitalized)")
                 }
                 .padding(.vertical)
                 
@@ -109,7 +109,7 @@ struct CambiarNIP : View
                     }
                 })
                 {
-                    Botones("Canclear")
+                    Botones("\(String(localized: "cancel").capitalized)")
                 }
                 .padding(.vertical)
             }

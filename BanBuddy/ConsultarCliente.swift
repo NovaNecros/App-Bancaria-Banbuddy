@@ -14,7 +14,7 @@ struct ConsultarCliente : View
         {
             VStack(alignment: .center, spacing: 0)
             {
-                Text("Consultar cliente")
+                Text("\(String(localized: "consult").capitalized) \(String(localized: "client").capitalized)")
                     .font(.system(
                         size: 30,
                         weight: .heavy,
@@ -36,7 +36,7 @@ struct ConsultarCliente : View
                         Section()
                         {
                             Picker(
-                                "Display",
+                                "\(String(localized: "display").capitalized)",
                                 selection: $displayMode)
                             {
                                 ForEach(tiposDisplay, id: \.self)
@@ -60,25 +60,25 @@ struct ConsultarCliente : View
                     {
                         HStack(alignment: .center, spacing: 0)
                         {
-                            Text("Nombre")
+                            Text("\(String(localized: "name").capitalized)")
                                 .font(.system(size: 20))
                         }
                         
                         HStack(alignment: .center, spacing: 0)
                         {
-                            Text("Apellidos")
+                            Text("\(String(localized: "last_name").capitalized)s")
                                 .font(.system(size: 20))
                         }
                         
                         HStack(alignment: .center, spacing: 0)
                         {
-                            Text("Tarjetas")
+                            Text("\(String(localized: "card").capitalized)s")
                                 .font(.system(size: 20))
                         }
                         
                         HStack(alignment: .center, spacing: 0)
                         {
-                            Text("Movimientos")
+                            Text("\(String(localized: "transaction").capitalized)s")
                                 .font(.system(size: 20))
                         }
                     }

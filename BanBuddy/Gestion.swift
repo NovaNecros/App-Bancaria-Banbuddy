@@ -8,7 +8,7 @@ struct Gestion : View
         {
             VStack(alignment: .center, spacing: 0)
             {
-                Text("Gestión BBB")
+                Text("\(String(localized: "management").capitalized) \(String(localized: "siglas_banbuddy"))")
                     .font(.system(
                         size: 30,
                         weight: .heavy,
@@ -26,19 +26,19 @@ struct Gestion : View
                 
                 NavigationLink(destination: Clientes())
                 {
-                    Botones("Clientes")
+                    Botones("\(String(localized: "client").capitalized)s")
                 }
                 .padding(.vertical)
                 
                 NavigationLink(destination: Cuentas())
                 {
-                    Botones("Cuentas")
+                    Botones("\(String(localized: "account").capitalized)s")
                 }
                 .padding(.vertical)
                 
                 NavigationLink(destination: Tarjetas())
                 {
-                    Botones("Tarjetas")
+                    Botones("\(String(localized: "card").capitalized)s")
                 }
                 .padding(.vertical)
             }

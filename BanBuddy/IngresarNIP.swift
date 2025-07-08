@@ -12,7 +12,7 @@ struct IngresarNIP : View
         {
             VStack(alignment: .center, spacing: 0)
             {
-                Text("Ingresa NIP")
+                Text("\(String(localized: "insert").capitalized) \(String(localized: "nip"))")
                     .font(.system(
                         size: 30,
                         weight: .heavy,
@@ -27,7 +27,7 @@ struct IngresarNIP : View
                 
                 Spacer()
                 
-                SecureField(LocalizedStringKey("censored_4"), text: $nip)
+                SecureField("\(String(localized: "censored_4"))", text: $nip)
                     .font(.system(size: 60))
                     .autocorrectionDisabled(true)
                     .multilineTextAlignment(.center)
@@ -40,7 +40,7 @@ struct IngresarNIP : View
                 
                 NavigationLink(destination: MenuPrincipal())
                 {
-                    Botones("Verificar")
+                    Botones("\(String(localized: "verify").capitalized)")
                 }
                 .padding(.vertical)
                 
@@ -52,7 +52,7 @@ struct IngresarNIP : View
                     }
                 })
                 {
-                    Botones("Canclear")
+                    Botones("\(String(localized: "cancel").capitalized)")
                 }
                 .padding(.vertical)
             }

@@ -15,7 +15,7 @@ struct ActualizarCliente : View
         
             VStack(alignment: .center, spacing: 0)
             {
-                Text(LocalizedStringKey("update_client"))
+                Text("\(String(localized: "update").capitalized) \(String(localized: "client").capitalized)")
                     .font(.system(
                         size: 30,
                         weight: .heavy,
@@ -37,7 +37,7 @@ struct ActualizarCliente : View
                         Section()
                         {
                             Picker(
-                                "Display",
+                                "\(String(localized: "display").capitalized)",
                                 selection: $displayMode)
                             {
                                 ForEach(tiposDisplay, id: \.self)
@@ -58,11 +58,11 @@ struct ActualizarCliente : View
                     
                     HStack(alignment: .center, spacing: 0)
                     {
-                        Text("Nombre:")
-                            .font(.system(size: 24))
+                        Text("\(String(localized: "name").capitalized):")
+                            .font(.system(size: 18))
                         
-                        TextField("nombre", text: $nombre)
-                            .font(.system(size: 24))
+                        TextField("\(String(localized: "name"))", text: $nombre)
+                            .font(.system(size: 18))
                             .autocorrectionDisabled(true)
                             .multilineTextAlignment(.trailing)
                     }
@@ -70,10 +70,10 @@ struct ActualizarCliente : View
                     HStack(alignment: .center, spacing: 0)
                     {
                         Text("\(String(localized: "last_name").capitalized)s:")
-                            .font(.system(size: 24))
+                            .font(.system(size: 18))
                         
-                        TextField("apellidos", text: $apellido)
-                            .font(.system(size: 24))
+                        TextField("\(String(localized: "last_name"))s", text: $apellido)
+                            .font(.system(size: 18))
                             .autocorrectionDisabled(true)
                             .multilineTextAlignment(.trailing)
                     }
@@ -84,7 +84,7 @@ struct ActualizarCliente : View
                 
                 NavigationLink(destination: Clientes())
                 {
-                    Botones("Actualizar")
+                    Botones("\(String(localized: "update").capitalized)")
                 }
             }
             .navigationBarBackButtonHidden(true)

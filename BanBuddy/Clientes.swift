@@ -11,7 +11,7 @@ struct Clientes : View
         {
             VStack(alignment: .center, spacing: 0)
             {
-                Text("Menú Clientes")
+                Text("\(String(localized: "menu").capitalized) \(String(localized: "clientes").capitalized)")
                     .font(.system(
                         size: 30,
                         weight: .heavy,
@@ -30,10 +30,10 @@ struct Clientes : View
                 {
                     HStack(alignment: .center, spacing: 10)
                     {
-                        Text("Nombre:")
+                        Text("\(String(localized: "nombre").capitalized):")
                             .font(.system(size: 24))
                         
-                        TextField("nombre", text: $nombre)
+                        TextField("\(String(localized: "nombre"))", text: $nombre)
                             .font(.system(size: 24))
                             .autocorrectionDisabled(true)
                             .multilineTextAlignment(.trailing)
@@ -41,10 +41,10 @@ struct Clientes : View
                     
                     HStack(alignment: .center, spacing: 10)
                     {
-                        Text("Apellidos:")
+                        Text("\(String(localized: "last_name").capitalized)s:")
                             .font(.system(size: 24))
                         
-                        TextField("apellidos", text: $apellidos)
+                        TextField("\(String(localized: "last_name"))s", text: $apellidos)
                             .font(.system(size: 24))
                             .autocorrectionDisabled(true)
                             .multilineTextAlignment(.trailing)
@@ -56,19 +56,19 @@ struct Clientes : View
                 
                 NavigationLink(destination: NuevoCliente())
                 {
-                    Botones("Nuevo")
+                    Botones("\(String(localized: "new").capitalized)")
                 }
                 .padding(.vertical)
                 
                 NavigationLink(destination: ActualizarCliente())
                 {
-                    Botones("Actualizar")
+                    Botones("\(String(localized: "update").capitalized)")
                 }
                 .padding(.vertical)
                 
                 NavigationLink(destination: ConsultarCliente())
                 {
-                    Botones("Consultar")
+                    Botones("\(String(localized: "consult").capitalized)")
                 }
                 .padding(.vertical)
                 

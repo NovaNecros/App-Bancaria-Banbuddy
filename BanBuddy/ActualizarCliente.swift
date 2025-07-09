@@ -2,6 +2,8 @@ import SwiftUI
 
 struct ActualizarCliente : View
 {
+    @Environment(\.dismiss) private var dismiss
+    
     @State private var displayMode : String = "Dark"
     @State private var nombre : String = ""
     @State private var apellido : String = ""
@@ -82,7 +84,13 @@ struct ActualizarCliente : View
                 
                 Spacer()
                 
-                NavigationLink(destination: Clientes())
+                Button(action:
+                {
+                    withAnimation(.spring())
+                    {
+                        dismiss()
+                    }
+                })
                 {
                     Botones("\(String(localized: "update").capitalized)")
                 }

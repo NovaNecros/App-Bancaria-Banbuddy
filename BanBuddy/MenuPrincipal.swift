@@ -11,7 +11,7 @@ struct MenuPrincipal : View
                 HStack(alignment: .center, spacing: 30)
                 {
                     Image(systemName: "dollarsign.circle.fill")
-                        .foregroundStyle(Color.red)
+                        .foregroundStyle(Color("ColorPrincipal"))
                         .font(.system(size: 50))
                     
                     Text(LocalizedStringKey("titulo_app"))
@@ -25,16 +25,16 @@ struct MenuPrincipal : View
                         .padding(.top, 10)
                     
                     Image(systemName: "dollarsign.circle.fill")
-                        .foregroundStyle(Color.red)
+                        .foregroundStyle(Color("ColorPrincipal"))
                         .font(.system(size: 50))
                 }
             
                 Spacer()
                 
-                Image("bank")
+                Image("BWT_b"/*"bank"*/)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 360)
+                    .frame(width: 240)
                 
                 Spacer()
                 

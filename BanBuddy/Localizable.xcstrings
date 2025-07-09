@@ -53,6 +53,9 @@
     "%@s:" : {
 
     },
+    "$ %@" : {
+
+    },
     "account" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -356,7 +359,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Banco BanBuddy"
+            "value" : "BeWealthy Prototipo"
           }
         }
       }

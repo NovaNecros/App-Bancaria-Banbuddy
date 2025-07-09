@@ -20,11 +20,9 @@ struct Clientes : View
                 
                 Spacer()
                 
-                Image("user")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 200)
-                    .padding(.bottom, 30)
+                Image(systemName: "person.circle.fill")
+                    .foregroundStyle(Color("ColorPrincipal"))
+                    .font(.system(size: 200))
                 
                 VStack(alignment: .leading, spacing: 20)
                 {

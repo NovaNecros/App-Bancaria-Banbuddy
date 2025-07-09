@@ -20,7 +20,7 @@ struct Botones : View
             .padding(.horizontal, 24)
             .background(
                 RoundedRectangle(cornerRadius: 32)
-                    .fill(Color.red.opacity(1)))
-            .shadow(color: Color.red.opacity(0.4), radius: 8, x: 8, y: 4)
+                    .fill(Color("ColorPrincipal")))
+            .shadow(color: Color("ColorPrincipal"), radius: 8, x: 8, y: 4)
     }
 }

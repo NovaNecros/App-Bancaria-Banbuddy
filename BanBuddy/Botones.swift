@@ -21,6 +21,11 @@ struct Botones : View
             .background(
                 RoundedRectangle(cornerRadius: 32)
                     .fill(Color("ColorPrincipal")))
-            .shadow(color: Color("ColorPrincipal"), radius: 8, x: 8, y: 4)
+            .shadow(color: Color("ColorPrincipal"), radius: 2, x: 4, y: 4)
     }
+}
+
+#Preview
+{
+    MenuPrincipal()
 }

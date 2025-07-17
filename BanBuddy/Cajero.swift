@@ -23,6 +23,7 @@ struct Cajero : View
                 {
                     Botones("\(String(localized: "return").capitalized)")
                 }
+                .padding(.bottom)
             }
             .navigationBarBackButtonHidden(true)
             .padding()

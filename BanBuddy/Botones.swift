@@ -3,19 +3,25 @@ import SwiftUI
 struct Botones : View
 {
     @State var texto : String
+    @State var width : CGFloat
+    @State var height : CGFloat
+    @State var textSize : CGFloat
     
-    init(_ texto: String)
+    init(_ texto: String, width: Int = 260, height: Int = 50, textSize: Int = 30)
     {
         self.texto = texto
+        self.width = CGFloat(width)
+        self.height = CGFloat(height)
+        self.textSize = CGFloat(textSize)
     }
     
     var body : some View
     {
         Text(texto)
-            .font(.system(size:30))
+            .font(.system(size: textSize))
             .foregroundColor(.white)
             .multilineTextAlignment(.center)
-            .frame(width: 260, height: 50)
+            .frame(width: width, height: height)
             .padding(.vertical, 12)
             .padding(.horizontal, 24)
             .background(

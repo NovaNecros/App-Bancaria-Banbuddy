@@ -27,12 +27,12 @@ struct ActualizarCliente : View
                 Image("transaction")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 180)
-                    .padding(.top, 60)
+                    .frame(width: 150)
+                    .padding(.top, 30)
                 
                 Spacer()
                 
-                VStack(alignment: .leading, spacing: 20)
+                VStack(alignment: .leading, spacing: 0)
                 {
                     Form()
                     {
@@ -68,6 +68,7 @@ struct ActualizarCliente : View
                             .autocorrectionDisabled(true)
                             .multilineTextAlignment(.trailing)
                     }
+                    .padding(.bottom)
                     
                     HStack(alignment: .center, spacing: 0)
                     {
@@ -83,17 +84,31 @@ struct ActualizarCliente : View
                 .padding(40)
                 
                 Spacer()
-                
-                Button(action:
+                VStack(alignment: .center, spacing: 20)
                 {
-                    withAnimation(.spring())
+                    Button(action:
                     {
-                        dismiss()
+                        withAnimation(.spring())
+                        {
+                            dismiss()
+                        }
+                    })
+                    {
+                        Botones("\(String(localized: "update").capitalized)", height: 30)
                     }
-                })
-                {
-                    Botones("\(String(localized: "update").capitalized)")
+                    
+                    Button(action:
+                    {
+                        withAnimation(.spring())
+                        {
+                            dismiss()
+                        }
+                    })
+                    {
+                        Botones("\(String(localized: "cancel").capitalized)", height: 30)
+                    }
                 }
+                .padding()
             }
             .navigationBarBackButtonHidden(true)
             .padding()

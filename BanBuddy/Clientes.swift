@@ -2,6 +2,7 @@ import SwiftUI
 
 struct Clientes : View
 {
+    @Environment(\.dismiss) private var dismiss
     @State private var nombre : String = ""
     @State private var apellidos : String = ""
     
@@ -52,24 +53,33 @@ struct Clientes : View
                 
                 Spacer()
                 
-                NavigationLink(destination: NuevoCliente())
+                VStack(alignment: .center, spacing: 20)
                 {
-                    Botones("\(String(localized: "new").capitalized)")
-                }
-                .padding(.vertical)
                 
-                NavigationLink(destination: ActualizarCliente())
-                {
-                    Botones("\(String(localized: "update").capitalized)")
+                    NavigationLink(destination: NuevoCliente())
+                    {
+                        Botones("\(String(localized: "new").capitalized)", height: 30)
+                    }
+                    
+                    NavigationLink(destination: ActualizarCliente())
+                    {
+                        Botones("\(String(localized: "update").capitalized)", height: 30)
+                    }
+                    
+                    NavigationLink(destination: ConsultarCliente())
+                    {
+                        Botones("\(String(localized: "consult").capitalized)", height: 30)
+                    }
+                    
+                    Button(action:
+                    {
+                        dismiss()
+                    })
+                    {
+                        Botones("\(String(localized: "return").capitalized)", height: 30)
+                    }
                 }
-                .padding(.vertical)
-                
-                NavigationLink(destination: ConsultarCliente())
-                {
-                    Botones("\(String(localized: "consult").capitalized)")
-                }
-                .padding(.vertical)
-                
+                .padding()
             }
             .navigationBarBackButtonHidden(true)
             .padding()

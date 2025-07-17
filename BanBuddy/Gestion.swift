@@ -2,6 +2,8 @@ import SwiftUI
 
 struct Gestion : View
 {
+    @Environment(\.dismiss) private var dismiss
+    
     var body : some View
     {
         NavigationStack()
@@ -24,23 +26,33 @@ struct Gestion : View
                 
                 Spacer()
                 
-                NavigationLink(destination: Clientes())
+                VStack(alignment: .center, spacing: 20)
                 {
-                    Botones("\(String(localized: "client").capitalized)s")
+                    NavigationLink(destination: Clientes())
+                    {
+                        Botones("\(String(localized: "client").capitalized)s", height: 30)
+                    }
+                    
+                    NavigationLink(destination: Cuentas())
+                    {
+                        Botones("\(String(localized: "account").capitalized)s", height: 30)
+                    }
+                    
+                    NavigationLink(destination: Tarjetas())
+                    {
+                        Botones("\(String(localized: "card").capitalized)s", height: 30)
+                    }
+                    
+                    Button(action:
+                    {
+                        dismiss()
+                    })
+                    {
+                        Botones("\(String(localized: "exit").capitalized)", height: 30)
+                    }
                 }
-                .padding(.vertical)
-                
-                NavigationLink(destination: Cuentas())
-                {
-                    Botones("\(String(localized: "account").capitalized)s")
-                }
-                .padding(.vertical)
-                
-                NavigationLink(destination: Tarjetas())
-                {
-                    Botones("\(String(localized: "card").capitalized)s")
-                }
-                .padding(.vertical)
+                .padding()
+
             }
             .navigationBarBackButtonHidden(true)
             .padding()

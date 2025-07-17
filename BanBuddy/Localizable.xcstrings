@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
     "%@" : {
 
     },
@@ -44,6 +47,16 @@
         }
       }
     },
+    "%@ %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$lld"
+          }
+        }
+      }
+    },
     "%@:" : {
 
     },
@@ -54,6 +67,9 @@
 
     },
     "$ %@" : {
+
+    },
+    "$%@" : {
 
     },
     "account" : {
@@ -172,7 +188,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Consultar"
+            "value" : "consultar"
           }
         }
       }
@@ -228,6 +244,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "display"
+          }
+        }
+      }
+    },
+    "exit" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "salir"
           }
         }
       }
@@ -404,6 +431,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "verificar"
+          }
+        }
+      }
+    },
+    "withdraw" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "retiro"
           }
         }
       }

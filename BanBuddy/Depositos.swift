@@ -21,9 +21,15 @@ struct Depositos : View
                         size: 30,
                         weight: .heavy,
                         design: .rounded))
-                    .padding(.top)
+                    .padding(.vertical)
                 
                 Spacer()
+                
+                Image("piggy-bank")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 150)
+                    .padding()
 
                 TextField("", text: $montoTexto)
                     .focused($montoFocused)
@@ -60,14 +66,13 @@ struct Depositos : View
                 
                 Slider(value: $monto, in: 0...1000, step: 50)
                     .padding(.horizontal, 60)
-                    .padding(.bottom, 50)
-                    .padding(.top)
+                    .padding(.vertical)
                 
-                VStack(alignment: .center, spacing: 20)
+                VStack(alignment: .center, spacing: 15)
                 {
                     ForEach(0..<2)
                     { i in
-                        HStack(alignment: .center, spacing: 40)
+                        HStack(alignment: .center, spacing: 30)
                         {
                             ForEach(0..<2)
                             { j in
@@ -80,7 +85,7 @@ struct Depositos : View
                                     }
                                 })
                                 {
-                                    Botones("$ \(Int(montosDefault[2*i+j]))", width: 80, textSize: 24)
+                                    Botones("$ \(Int(montosDefault[2*i+j]))", width: 80, height: 30, textSize: 24)
                                 }
                             }
                         }
@@ -98,9 +103,9 @@ struct Depositos : View
                     }
                 })
                 {
-                    Botones("\(String(localized: "confirm").capitalized)")
+                    Botones("\(String(localized: "confirm").capitalized)", height: 30)
                 }
-                .padding(.bottom)
+                .padding(.horizontal)
                 
                 Button(action:
                 {
@@ -110,9 +115,9 @@ struct Depositos : View
                     }
                 })
                 {
-                    Botones("\(String(localized: "cancel").capitalized)")
+                    Botones("\(String(localized: "cancel").capitalized)", height: 30)
                 }
-                .padding(.vertical)
+                .padding()
             }
             .navigationBarBackButtonHidden(true)
             .padding()
